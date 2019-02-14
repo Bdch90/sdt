@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SDT viettel</title>
+</head>
+<body>
+<script type="text/javascript">
+	var sdt = ['0987123333','0986111111','0999929393','0987122333','03457787876','04949494949'];
+	document.write(sdt);
+	function check (arr) {
+		var pattern = /^0[98][687]{1,3}([0-9]+){6,7}$/;
+		for (i=0;i<sdt.length;i++) {
+			var check1 = pattern.test(arr[i]);
+			if (check1 ==true) {
+				document.write('Sdt viettel : ' + arr[i]+'<br>');
+			}
+		}
+	}
+	check(sdt);
+</script>
+</body>
+</html>
